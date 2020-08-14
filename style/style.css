@@ -1,6 +1,58 @@
-h1 {
-    width: auto;
-    margin: auto;
-    font-size: x-large;
-    font-family: fantasy;
+.jumbotron {
+    margin-bottom: 0rem;
+    background-image: url(https://images.pexels.com/photos/2928587/pexels-photo-2928587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    height: 500px;
+    color: whitesmoke;
+}
+
+.link {
+    color: #212529;
+    transition: all .2s ease-in-out;
+}
+
+.link:hover {
+    transform: scale(1.1); 
+    color: #212529;
+
+}
+
+.card-img-top {
+    width: 30%;
+    margin: 50px 50px;
+}
+
+.card-deck {
+    margin-top: -150px;
+    
+}
+
+.card-top {
+    height: 400px;
+
+}
+
+.link {
+    width: 33.3%;
+}
+
+#about {
+    margin-top: 50px;
+}
+
+#portfolio {
+    margin-top: 50px;
+    background-color: #f8f9fa;
+}
+
+#contact {
+    margin-top: 50px;
+}
+
+.no-gutters {
+    max-width: 100%;
+}
+
+.title {
+    padding: 25px 25px;
 }
