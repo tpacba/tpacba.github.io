@@ -10,9 +10,10 @@
 </head>
 <body>
     <header>
-        <div class="jumbotron jumbotron-fluid">
+        <div id="top-deck" class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-4">hello, world!</h1>
+                <hr class="a">
                 <p class="lead">My name is Tristan Pacba. I am
                     <ul class="lead">
                         <li>a Web Developer,</li>
@@ -26,10 +27,10 @@
     <main>
         <section>
             <div class="container">
-                <div class="card-deck">
+                <div class="card-deck" >
                     <a class="link" href="#about">
-                        <div class="card bg-light mb-3">
-                            <img src="https://img.icons8.com/pastel-glyph/2x/person-male.png" class="card-img-top mx-auto" alt="...">
+                        <div class="card bg-light mb-3 card-top">
+                            <img src="https://img.icons8.com/pastel-glyph/2x/person-male.png" class="card-img-top mx-auto" alt="person icon">
                             <div class="card-body">
                                 <h1 class="card-title">About</h1>
                                 <p class="card-text lead">Learn more about me <br>(e.g. experiences, education, interests)
@@ -38,8 +39,8 @@
                         </div>
                     </a>
                     <a class="link" href="#portfolio">
-                        <div class="card bg-light mb-3">
-                            <img src="https://img.icons8.com/all/500/opened-folder.png" class="card-img-top mx-auto" alt="...">
+                        <div class="card bg-light mb-3 card-top">
+                            <img src="https://img.icons8.com/all/500/opened-folder.png" class="card-img-top mx-auto" alt="folder icon">
                             <div class="card-body">
                                 <h1 class="card-title">Portfolio</h1>
                                 <p class="card-text lead">Check out my projects <br>(e.g. websites, applications)</p>
@@ -47,8 +48,8 @@
                         </div>
                     </a>
                     <a class="link" href="#contact">
-                        <div class="card bg-light mb-3">
-                            <img src="https://img.icons8.com/carbon-copy/2x/email.png" class="card-img-top mx-auto" alt="...">
+                        <div class="card bg-light mb-3 card-top">
+                            <img src="https://img.icons8.com/carbon-copy/2x/email.png" class="card-img-top mx-auto" alt="email icon">
                             <div class="card-body">
                                 <h1 class="card-title">Contact</h1>
                                 <p class="card-text lead">Connect with me <br>(e.g. Email, LinkedIn, GitHub)</p>
@@ -61,7 +62,24 @@
         <section>
             <div id="about" class="container no-gutters mx-auto">
                 <div class="text-center">
-                    <h1 class="display-4 title">About</h1>
+                    <h1 class="display-4 title" style="padding: 0;">About</h1>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <div class="text-center">
+                                <img src="./style/FB_IMG_1590397329141.jpg" class="rounded img-thumbnail" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-9" style="padding: 25px">
+                            <p class="lead">Past STEM educator transitioning to Software Engineering with a passion for developing future web applications in Education Technology.</p>
+                                <hr> <p class="lead">Skilled in problem-solving, team collaboration, and simplifying solutions for effective communication due to various roles as Teacher and Program Lead. </p>
+                                <hr> <p class="lead">Strong academic knowledge with a BS in Physics and Chemistry minor from Azusa Pacific University. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#top-deck"><p class="lead">Back to Top</p></a>
                 </div>
             </div>
         </section>
@@ -74,72 +92,146 @@
                     <div class="row">
                         <div class="col-md-4 col-12">
                             <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
+                                <a href="https://fudoggy.github.io/project1/"><img src="./style/cowabunga-demo.png" class="img-top mx-auto" alt="surfing beach finder website"></a>
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <h3 class="card-title">Cowabunga Surfing App</h3>
+                                    <p class="card-text">
+                                        <ul>
+                                            <li>
+                                                Helps the user find nearby beaches and determine up-to-date weather and surf conditions.
+                                            </li>
+                                            <li>
+                                                Combines Google Geocode and Places API along with the Coastal Commisions database and the StormGlass Weather API.
+                                            </li>
+                                        </ul>
+                                        <p class="text-center"><a href="https://fudoggy.github.io/project1/">Website</a><br><a href="https://github.com/FuDoggy/project1.git">GitHub</a></p>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 col-12">
                             <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
+                                <a href="https://tpacba.github.io/homework6-weatherdashboard/"><img src="./style/weather-dashboard-demo.png" class="img-top mx-auto" alt="weather app website"></a>
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <h3 class="card-title">Weather Dashboard</h3>
+                                    <p class="card-text">
+                                        <ul>
+                                            <li>
+                                                Lets the user determine current weather conditions in city they search for and saves the user's search history.
+                                            </li>
+                                            <li>
+                                                Uses Google Geocode, Openweather, and Pixabay API to display data and images.
+                                            </li>
+                                        </ul> 
+                                        <p class="text-center"><a href="https://tpacba.github.io/homework6-weatherdashboard/">Website</a><br><a href="https://github.com/tpacba/homework6-weatherdashboard.git">GitHub</a></p>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 col-12">
                             <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
+                                <a href="https://tpacba.github.io/homework5-dayplanner/"><img src="./style/workday-scheduler.png" class="img-top" alt="workday scheduler website"></a>
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <h3 class="card-title">Workday Scheduler</h3>
+                                    <p class="card-text">
+                                        <ul>
+                                            <li>
+                                                Allows the user to input to-do lists and events and save the data for eventual reuse. 
+                                            </li>
+                                            <li>
+                                                Uses Moment JS syntax for time and date variables.
+                                            </li>
+                                        </ul>
+                                        <p class="text-center"><a href="https://tpacba.github.io/homework5-dayplanner/">Website</a><br><a href="https://github.com/tpacba/homework5-dayplanner.git">GitHub</a></p>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4 col-12">
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-12">
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-12">
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#top-deck"><p class="lead">Back to Top</p></a>
                 </div>
             </div>
         </section>
         <section>
             <div id="contact" class="container  no-gutters mx-auto">
                 <div class="text-center">
-                    <h1 class="display-4 title">Contact</h1>
+                    <h1 class="display-4 title" style="padding: 0px; margin-bottom: 25px;">Contact</h1>
                 </div>
+                <div class="container">
+                    <div class="row">
+                        <div style="padding-top: 30px; padding-bottom: 30px;"
+                            class="col-md-6 col-sm-12 border border-light rounded-lg">
+                            <form>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Name</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                        placeholder="john@doe.com">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                        else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                        placeholder="Hello, my name is John Doe."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                        <div style="padding: 5%;"
+                            class="col-sm-12 mx-auto col-md-6 bg-secondary rounded-lg text-light">
+                            <div class="row mx-auto">
+                                <div style="padding: 3%" class="col-md-2 col-3">
+                                    <img style="width: 100%;"
+                                        src="./style/pictures/location.png"
+                                        class="rounded mx-auto d-block" alt="Location ping icon">
+                                </div>
+                                <div style="padding: 5%" class="col-md-9 col-9">
+                                    <h4 class="lead">Los Angeles, CA, USA</h4>
+                                </div>
+                            </div>
+                            <hr class="a">
+                            <a href="https://www.linkedin.com/in/tristan-pacba/">
+                            <div class="row mx-auto">
+                                <div style="padding: 3%" class="col-md-2 col-3">
+                                    <img style="width: 100%;" src="./style/pictures/linkedin-icon-18-256.png"
+                                        class="rounded mx-auto d-block" alt="linkedin icon">
+                                </div>
+                                <div style="padding: 5%; color: white;" class="col-md-9 col-9">
+                                    <h4 class="lead">linkedin.com/in/tristan-pacba/</h4>
+                                </div>
+                            </div>
+                            </a>
+                            <hr class="a">
+                            <a href="mailto:tpacba@live.com">
+                            <div class="row mx-auto">
+                                <div style="padding: 3%" class="col-md-2 col-3">
+                                    <img style="width:100%;" src="./style/pictures/mail-xxl.png"
+                                        class="rounded mx-auto d-block" alt="Email icon">
+                                </div>
+                                <div style="padding: 5%; color: white;" class="col-md-9 col-9">
+                                    <h4 class="lead">tpacba@live.com</h4>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="tristan-pacba"><a class="LI-simple-link" href='https://www.linkedin.com/in/tristan-pacba?trk=profile-badge'>Tristan Pacba</a></div> -->
             </div>
         </section>
     </main>
+    <footer style="margin-top: 25px;">
+        <div class="text-center">
+            <a href="#top-deck"><p class="lead">Back to Top</p></a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

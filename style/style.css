@@ -22,14 +22,20 @@
     margin: 50px 50px;
 }
 
+.img-top {
+    max-width: 100%;
+    padding: 15px 15px;
+}
 .card-deck {
     margin-top: -150px;
-    
 }
 
 .card-top {
     height: 400px;
+}
 
+.card {
+    margin-top: 20px;
 }
 
 .link {
@@ -43,6 +49,7 @@
 #portfolio {
     margin-top: 50px;
     background-color: #f8f9fa;
+    padding-bottom: 50px;
 }
 
 #contact {
@@ -54,5 +61,14 @@
 }
 
 .title {
-    padding: 25px 25px;
+    padding-top: 25px;
+    margin: 0px;
+}
+
+.img-thumbnail {
+    width: 100%;
+}
+
+hr.a {
+    border: 1px solid whitesmoke;
 }
