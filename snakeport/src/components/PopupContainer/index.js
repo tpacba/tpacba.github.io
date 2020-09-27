@@ -1,10 +1,10 @@
 import React from "react";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
-function Navbar() {
+function PopupContainer() {
     return (
-        <div>Navbar</div>
+        <div>PopupContainer</div>
     )
 }
 
-export default Navbar;
+export default PopupContainer;

@@ -1,13 +1,16 @@
 import React from 'react';
+import GameArea from './components/GameArea';
+import Navbar from './components/Navbar';
+import PopupContainer from './components/PopupContainer';
 
-class App extends React.Component {
-
-  render() {
+function App() {
     return (
-      <div className="App">
+      <div>
+        <Navbar />
+        <GameArea />
+        <PopupContainer />
       </div>
-    );
-  }
+    )
 }
 
 export default App;
