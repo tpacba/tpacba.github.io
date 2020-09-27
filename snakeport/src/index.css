@@ -5,3 +5,22 @@
   height: 600px;
   border: 2px solid black;
 }
+
+.snake-dot {
+  position: absolute;
+  width: 4%;
+  height: 4%;
+  background-color: black;
+  z-index: 2;
+  border-radius: 100%;
+}
+
+.snake-food {
+  position: absolute;
+  width: 4%;
+  height: 4%;
+  background-color: red;
+  z-index: 1;
+  border-radius: 100%;
+
+}
