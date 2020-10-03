@@ -1,2 +1,2 @@
-# tpacba.github.io
-My Github Pages Site
+# "SnakePort"
+An interation of the retro arcade game Snake with my web developer portfolio, tpacba.github.io, using Material-UI for design.
