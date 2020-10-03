@@ -1,3 +1,8 @@
+.wrapper {
+  min-height: 100%;
+  padding-bottom: 100px;
+}
+
 .game-area {
   position: relative;
   margin: 50px auto;
@@ -24,6 +29,33 @@
   border-radius: 100%;
 }
 
-.instructions {  
+.instructions {
   z-index: 3;
+}
+
+.about-wall {
+  position: absolute;
+  left: 20%;
+  top: -8%;
+  width: 100%;
+}
+
+.portfolio-wall {
+  position: absolute;
+  top: -30%;
+  bottom: -30%;
+  transform: rotate(90deg);
+}
+
+.contact-wall {
+  position: absolute;
+  top: 11%;
+  bottom: 11%;
+  transform: rotate(-90deg);
+}
+
+.play-wall {
+  position: absolute;
+  left: 18%;
+  bottom: -10%;
 }

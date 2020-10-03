@@ -2,6 +2,7 @@ import React from 'react';
 import Snake from './Snake';
 import Food from './Food';
 import StartButton from './StartButton';
+import Walls from './Walls';
 
 function getRandomCoordinates() {
     const min = 0;
@@ -174,6 +175,7 @@ class GameArea extends React.Component {
         return (
             <div className="game-area">
                 {(!this.state.start && <StartButton startGame={this.startGame}></StartButton>)}
+                {(this.state.start && <Walls></Walls>)}
                 <Snake snakeDots={this.state.snakeDots}></Snake>
                 <Food dot={this.state.food}></Food>
             </div>

@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function ContainedButtons(props) {
+export default function(props) {
     const classes = useStyles();
 
     return (
