@@ -2,7 +2,6 @@ body {
   height: 100%;
   background-image: url("./assets/wallpaper.jpeg");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -33,7 +32,7 @@ body {
   position: absolute;
   width: 2%;
   height: 2%;
-  background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+  background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
   z-index: 1;
   border-radius: 100%;
 }
@@ -110,9 +109,26 @@ body {
 .close-port {
   position: absolute;
   right: 10px;
-  top: 10px
+  top: 10px;
 }
 
 .close-port:hover {
-  color: grey
+  color: grey;
+}
+
+.opentowork {
+  background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+  width: 30%;
+}
+
+@media only screen and (max-width: 900px) {
+  .opentowork {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .opentowork {
+    width: 70%;
+  }
 }

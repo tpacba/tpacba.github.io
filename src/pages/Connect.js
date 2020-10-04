@@ -42,7 +42,7 @@ export default function Contact() {
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
-                    <Accordion style={{ background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)", color: "white", width: "30%", display: "block", margin: "auto"}}>
+                    <Accordion className="opentowork" style={{ color: "white", display: "block", margin: "auto"}}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon style={{ color: "white" }} />}
                             aria-controls="panel1a-content"
@@ -65,20 +65,20 @@ export default function Contact() {
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
-                
+
                 <Grid item xs={12} style={{ textAlign: "center" }}>
-                <Typography variant="body1">
-                    <a href="mailto: tpacba@live.com" target="_blank" rel="noopener noreferrer" style={{ color: "black" }}><EmailIcon style={{ fontSize: 40, marginRight: "10px", marginBottom: "-15px"}}></EmailIcon>tpacba@live.com</a>
-                </Typography>
-                </Grid>
-                <Grid item xs={12} style={{ textAlign: "center" }}>
-                <Typography variant="body1">
-                    <a href="https://www.linkedin.com/in/tristan-pacba/" target="_blank" rel="noopener noreferrer" style={{ color: "black" }}><LinkedInIcon style={{ fontSize: 40, marginRight: "10px", marginBottom: "-15px"}}></LinkedInIcon>https://www.linkedin.com/in/tristan-pacba/</a>
+                    <Typography variant="body1">
+                        <a href="mailto: tpacba@live.com" target="_blank" rel="noopener noreferrer" style={{ color: "black" }}><EmailIcon style={{ fontSize: 40, marginRight: "10px", marginBottom: "-15px" }}></EmailIcon>tpacba@live.com</a>
                     </Typography>
                 </Grid>
                 <Grid item xs={12} style={{ textAlign: "center" }}>
-                <Typography variant="body1">
-                    <a href="https://github.com/tpacba" target="_blank" rel="noopener noreferrer" style={{ color: "black" }}><GitHubIcon style={{ fontSize: 40, marginRight: "10px", marginBottom: "-15px"}}></GitHubIcon>https://github.com/tpacba</a>
+                    <Typography variant="body1">
+                        <a href="https://www.linkedin.com/in/tristan-pacba/" target="_blank" rel="noopener noreferrer" style={{ color: "black" }}><LinkedInIcon style={{ fontSize: 40, marginRight: "10px", marginBottom: "-15px" }}></LinkedInIcon>https://www.linkedin.com/in/tristan-pacba/</a>
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} style={{ textAlign: "center" }}>
+                    <Typography variant="body1">
+                        <a href="https://github.com/tpacba" target="_blank" rel="noopener noreferrer" style={{ color: "black" }}><GitHubIcon style={{ fontSize: 40, marginRight: "10px", marginBottom: "-15px" }}></GitHubIcon>https://github.com/tpacba</a>
                     </Typography>
                 </Grid>
             </Grid>
