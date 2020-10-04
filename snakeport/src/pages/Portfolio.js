@@ -10,14 +10,12 @@ import IconButton from "@material-ui/core/IconButton";
 import InfoIcon from "@material-ui/icons/Info";
 import tinderforrestaurants from "../assets/tinderforrestaurants.png";
 import cowabunga from "../assets/cowabunga-demo.png";
-import eatdaburger from "../assets/eat-da-burger.png";
-import weatherdashboard from "../assets/weather-dashboard-demo.png";
-import workdayscheduler from "../assets/workday-scheduler.png";
 import smood from "../assets/smood.png";
 import snakeport from "../assets/snakport.png";
 import fitnesstracker from "../assets/fitnesstracker.png";
 import userdirectory from "../assets/directory.png";
 import Paper from '@material-ui/core/Paper';
+import Chip from '@material-ui/core/Chip';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -49,6 +47,7 @@ const tileData = [
             github: "https://github.com/tpacba/project-smood",
             website: "",
         },
+        tags: ["ReactJS", "Heroku", "APIs", "OAuth", "NodeJS"]
     },
     {
         img: snakeport,
@@ -61,6 +60,7 @@ const tileData = [
             github: "https://github.com/tpacba/tpacba.github.io.git",
             website: "https://tpacba.github.io",
         },
+        tags: ["ReactJS", "Material-UI", "Javascript", "React-Router"]
     },
     {
         img: tinderforrestaurants,
@@ -74,6 +74,7 @@ const tileData = [
             github: "https://github.com/tpacba/tinderforrestaurants.git",
             website: "https://vast-lowlands-43566.herokuapp.com/",
         },
+        tags: ["MySQL", "Sequilize ORM", "PassportJS", "Figma", "ExpressJS"]
     },
     {
         img: cowabunga,
@@ -85,6 +86,7 @@ const tileData = [
             github: "https://github.com/FuDoggy/project1",
             website: "https://fudoggy.github.io/project1/",
         },
+        tags: ["APIs", "Bootstrap", "jQuery", "Git", "HTML & CSS"]
     },
     {
         img: fitnesstracker,
@@ -96,6 +98,7 @@ const tileData = [
             github: "https://github.com/tpacba/homework17-workout-tracker",
             website: "https://pacific-anchorage-84827.herokuapp.com/",
         },
+        tags: ["MongoDB", "Mongoose", "Express", "AJAX"]
     },
     {
         img: userdirectory,
@@ -107,6 +110,7 @@ const tileData = [
             github: "https://github.com/tpacba/homework19-userdirectory",
             website: "https://tpacba.github.io/homework19-userdirectory/",
         },
+        tags: ["ReactJS", "Bootstrap", "Regex", "APIs"]
     },
 ];
 
@@ -159,6 +163,7 @@ export default function TitlebarGridList() {
                                                     github: tile.links.github,
                                                     website: tile.links.website,
                                                 },
+                                                tags: tile.tags
                                             })}
                                         >
                                             <InfoIcon />
@@ -191,6 +196,11 @@ export default function TitlebarGridList() {
                         <Grid item xs={12}>
                             <em>Screenshots:</em> <br></br>
                             <img alt={tile.title} src={tile.img} style={{ height: "100px" }} />
+                        </Grid>
+                        <Grid item xs={12} style={{marginTop: "10px"}}>
+                            {tile.tags.map(item => (
+                                <Chip label={item} style={{margin: "2px"}}/>
+                            ))}
                         </Grid>
                     </Paper>
                 </Grid>
