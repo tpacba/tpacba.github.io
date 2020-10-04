@@ -36,7 +36,7 @@ export default function About() {
               </Typography>
                             <Typography variant="body1" gutterBottom>
                                 Hey, thanks for checking out my website! My name is Tristan
-                                Pacba, and I'm web developer. I'm a graduate of UCLA's
+                                Pacba, and I'm a web developer. I'm a graduate of UCLA's
                                 Full-Stack Development Bootcamp Program and Azusa Pacific
                                 University with a BS in Physics. I'm a skilled problem-solver
                                 and have experience developing web applications using MERN stack
@@ -57,7 +57,7 @@ export default function About() {
                                     About
               </Typography>
                                 <Typography variant="body1" gutterBottom>
-                                    My name is Tristan Pacba, and I'm web developer. I'm a graduate
+                                    My name is Tristan Pacba, and I'm a web developer. I'm a graduate
                                     of UCLA's Full-Stack Development Bootcamp Program and Azusa
                                     Pacific University with a BS in Physics. I'm a skilled
                                     problem-solver and have experience developing web applications
@@ -70,9 +70,9 @@ export default function About() {
                         </>
                     )}
                 <Grid item xs={12}>
-                    My past experience include being a STEM educator, teaching Physics in
-                    James A. Garfield High School and Mathematics in Los Angeles Christian
-                    Academy. I transitioned to web development in the beginning of 2020
+                    My past experience includes being a STEM educator, teaching Physics at
+                    James A. Garfield High School, and Mathematics at Los Angeles Christian
+                    Academy. I transitioned to web development at the beginning of 2020
                     and now aspire to become a software engineer, building apps for
                     Educational Technology.
           <br></br>
@@ -82,7 +82,7 @@ export default function About() {
           itself is a music player that curates the user's music according to
           their mood by fully integrating the Spotify Web API with ReactJS state
           and lifecycles. You can check out the source code for "Smood",
-          "SnakePort", as well as my other projects in my{" "}
+          "SnakePort", as well as my other projects on my{" "}
                     <a href="/portfolio">Portfolio</a> page.
         </Grid>
             </Grid>

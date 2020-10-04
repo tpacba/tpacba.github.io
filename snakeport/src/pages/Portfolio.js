@@ -54,8 +54,8 @@ const tileData = [
         title: "SnakePort",
         description:
             `SnakePort is my take on creating an interactive portfolio as a web developer.
-            The retro arcade Snake game is coded entirely with ReactJS thanks to lifecycle methods (i.e. componentDidMount and componentDidUpdate).
-            The pages were designed using the Material-UI framework from grid components to icons`,
+            The retro arcade Snake game is coded entirely with ReactJS thanks to lifecycle methods (i.e. componentDidMount & componentDidUpdate).
+            The pages were designed using the Material-UI framework from grid components to icons.`,
         links: {
             github: "https://github.com/tpacba/tpacba.github.io.git",
             website: "https://tpacba.github.io",
@@ -67,7 +67,7 @@ const tileData = [
         title: "Tinder For Restaurants",
         description:
             `Tinder For Restaurants is an app just like Tinder but for choosing restaurants.
-            By using the familiar Tinder UI of swiping to choose or eliminate, groups of users are able to choose a single restaurant by rounds of elimination.
+            By using the familiar Tinder UI of swiping to choose or eliminate, groups of users can choose a single restaurant by rounds of elimination.
             The app uses Yelp API to create restaurant suggestions and MySQL database to save and render restaurant data in real-time.
             I was able to design the website theme using Figma and Bootstrap to create a mobile-responsive app.`,
         links: {
@@ -92,7 +92,7 @@ const tileData = [
         img: fitnesstracker,
         title: "Workout Tracker",
         description: 
-        `Workout Tracker  allows users to view create and track daily workouts. Users are able to log multiple exercises in a workout on a given day and track the name, type, weight, sets, reps, and duration of the exercise or, if the exercise is a cardio exercise, track the distance traveled. 
+        `Workout Tracker  allows users to view, create, and track daily workouts. Users can log multiple exercises in a workout on a given day and track the name, type, weight, sets, reps, and duration of the exercise or, if the exercise is a cardio exercise, track the distance traveled. 
         The app uses MongoDB with a Mongoose schema and handles routes with Express.`,
         links: {
             github: "https://github.com/tpacba/homework17-workout-tracker",
@@ -138,13 +138,13 @@ export default function TitlebarGridList() {
           </Typography>
                 </Grid>
                 <Grid item xs={12}>
-                    <Typography variant="body1" gutterBottom>
+                    <Typography variant="body2" gutterBottom>
                         Scroll down to check out some of my recent projects! Link to site and open-source
-                        Github always provided.
+                        Github are always provided. <br></br>Visit the <a href="/connect">Connect Page</a> to connect with me through Github, LinkedIn, and other socials.
           </Typography>
                 </Grid>
                 <Grid item xs={4}>
-                    <GridList cellHeight={180} className={classes.gridList} cols={1}>
+                    <GridList cellHeight={180} className={classes.gridList} cols={1} style={{border: "1px solid lightGrey"}}>
                         {tileData.map((tile) => (
                             <GridListTile key={tile.img}>
                                 <img src={tile.img} alt={tile.title} />
@@ -174,8 +174,8 @@ export default function TitlebarGridList() {
                         ))}
                     </GridList>
                 </Grid>
-                <Grid item xs={8} style={{ padding: "20px" }}>
-                    <Paper variant="outlined" style={{ padding: "20px" }}>
+                <Grid item xs={8} style={{ paddingLeft: "20px" }}>
+                    <Paper variant="outlined" style={{ padding: "20px", backgroundColor: "whitesmoke" }}>
                         <Grid item xs={12}>
                             <Typography variant="h4" gutterBottom>
                                 {tile.title}
@@ -199,7 +199,7 @@ export default function TitlebarGridList() {
                         </Grid>
                         <Grid item xs={12} style={{marginTop: "10px"}}>
                             {tile.tags.map(item => (
-                                <Chip label={item} style={{margin: "2px"}}/>
+                                <Chip label={item} style={{margin: "2px", color: "white", background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}}/>
                             ))}
                         </Grid>
                     </Paper>

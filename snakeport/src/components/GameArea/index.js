@@ -136,9 +136,9 @@ class GameArea extends React.Component {
             this.setState(startState);
             window.location.href = "/portfolio"
         } else if (head[0] < 0) {
-            alert("Redirecting to Contact");
+            alert("Redirecting to Connect");
             this.setState(startState);
-            window.location.href = "/contact"
+            window.location.href = "/connect"
         } else if (head[1] < 0) {
             alert("Redirecting to About");
             this.setState(startState);

@@ -1,11 +1,10 @@
 import React from 'react';
 import GameArea from './components/GameArea';
-import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Wrapper from './components/Wrapper';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
+import Connect from './pages/Connect';
 
 
 function App() {
@@ -16,9 +15,8 @@ function App() {
           <Route exact path="/" component={GameArea} />
           <Route exact path="/about" component={About} />
           <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/connect" component={Connect} />
         </Wrapper>
-        <Navbar />
       </div>
     </Router>
   )
