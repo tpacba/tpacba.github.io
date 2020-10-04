@@ -31,7 +31,7 @@ export default function Contact() {
 
     return (
         <div className={`about-page ${classes.root}`}>
-            <Close className="close" onClick={handleClose}></Close>
+            <Close className="close close-port" onClick={handleClose}></Close>
             <Grid container spacing={3}>
                 <Grid item xs={12}>
                     <Typography variant="h3" gutterBottom>
@@ -65,14 +65,21 @@ export default function Contact() {
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
+                
                 <Grid item xs={12} style={{ textAlign: "center" }}>
-                    <a href="mailto: tpacba@live.com" target="_blank" rel="noopener noreferrer" style={{ color: "black" }}><EmailIcon style={{ fontSize: 40, marginRight: "10px" }}></EmailIcon>tpacba@live.com</a>
+                <Typography variant="body1">
+                    <a href="mailto: tpacba@live.com" target="_blank" rel="noopener noreferrer" style={{ color: "black" }}><EmailIcon style={{ fontSize: 40, marginRight: "10px", marginBottom: "-15px"}}></EmailIcon>tpacba@live.com</a>
+                </Typography>
                 </Grid>
                 <Grid item xs={12} style={{ textAlign: "center" }}>
-                    <a href="https://www.linkedin.com/in/tristan-pacba/" target="_blank" rel="noopener noreferrer" style={{ color: "black" }}><LinkedInIcon style={{ fontSize: 40, marginRight: "10px" }}></LinkedInIcon>https://www.linkedin.com/in/tristan-pacba/</a>
+                <Typography variant="body1">
+                    <a href="https://www.linkedin.com/in/tristan-pacba/" target="_blank" rel="noopener noreferrer" style={{ color: "black" }}><LinkedInIcon style={{ fontSize: 40, marginRight: "10px", marginBottom: "-15px"}}></LinkedInIcon>https://www.linkedin.com/in/tristan-pacba/</a>
+                    </Typography>
                 </Grid>
                 <Grid item xs={12} style={{ textAlign: "center" }}>
-                    <a href="https://github.com/tpacba" target="_blank" rel="noopener noreferrer" style={{ color: "black" }}><GitHubIcon style={{ fontSize: 40, marginRight: "10px" }}></GitHubIcon>https://github.com/tpacba</a>
+                <Typography variant="body1">
+                    <a href="https://github.com/tpacba" target="_blank" rel="noopener noreferrer" style={{ color: "black" }}><GitHubIcon style={{ fontSize: 40, marginRight: "10px", marginBottom: "-15px"}}></GitHubIcon>https://github.com/tpacba</a>
+                    </Typography>
                 </Grid>
             </Grid>
         </div>

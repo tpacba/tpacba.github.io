@@ -14,8 +14,8 @@ body {
 .game-area {
   position: relative;
   margin: 50px auto;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   border: 40px solid white;
   background-color: whitesmoke;
 }
@@ -44,22 +44,22 @@ body {
 
 .about-wall {
   position: absolute;
-  left: 30%;
+  left: 28%;
   top: -6%;
   width: 100%;
 }
 
 .portfolio-wall {
   position: absolute;
-  top: -33.5%;
-  bottom: -33.5%;
+  top: -33%;
+  bottom: -33%;
   transform: rotate(90deg);
 }
 
 .contact-wall {
   position: absolute;
-  top: 21.5%;
-  bottom: 21.5%;
+  top: 20%;
+  bottom: 20%;
   transform: rotate(-90deg);
 }
 
@@ -111,4 +111,8 @@ body {
   position: absolute;
   right: 10px;
   top: 10px
+}
+
+.close-port:hover {
+  color: grey
 }

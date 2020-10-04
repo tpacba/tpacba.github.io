@@ -23,7 +23,7 @@ export default function About() {
 
     return (
         <div className={`about-page ${classes.root}`}>
-            <Close className="close" onClick={handleClose}></Close>
+            <Close className="close close-port" onClick={handleClose}></Close>
             <Grid container spacing={3}>
                 {matches ? (
                     <>
@@ -70,6 +70,8 @@ export default function About() {
                         </>
                     )}
                 <Grid item xs={12}>
+                <Typography variant="body1" gutterBottom>
+
                     My past experience includes being a STEM educator, teaching Physics at
                     James A. Garfield High School, and Mathematics at Los Angeles Christian
                     Academy. I transitioned to web development at the beginning of 2020
@@ -84,6 +86,7 @@ export default function About() {
           and lifecycles. You can check out the source code for "Smood",
           "SnakePort", as well as my other projects on my{" "}
                     <a href="/portfolio">Portfolio</a> page.
+                    </Typography>
         </Grid>
             </Grid>
         </div>

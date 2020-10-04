@@ -194,7 +194,7 @@ export default function TitlebarGridList() {
                             </Typography>
                         </Grid>
                         <Grid item xs={12}>
-                            <em>Screenshots:</em> <br></br>
+                            <Typography variant="caption"><em>Screenshots:</em> <br></br></Typography>
                             <img alt={tile.title} src={tile.img} style={{ height: "100px" }} />
                         </Grid>
                         <Grid item xs={12} style={{marginTop: "10px"}}>
