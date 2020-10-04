@@ -42,7 +42,7 @@ export default function Contact() {
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
-                    <Accordion style={{ background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)", color: "white", }}>
+                    <Accordion style={{ background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)", color: "white", width: "30%", display: "block", margin: "auto"}}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon style={{ color: "white" }} />}
                             aria-controls="panel1a-content"
