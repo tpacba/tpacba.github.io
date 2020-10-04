@@ -134,15 +134,15 @@ class GameArea extends React.Component {
         } else if (head[0] >= 100) {
             alert("Redirecting to Portfolio");
             this.setState(startState);
-            window.location.href = "/portfolio"
+            window.location.href = "/#/portfolio"
         } else if (head[0] < 0) {
             alert("Redirecting to Connect");
             this.setState(startState);
-            window.location.href = "/connect"
+            window.location.href = "/#/connect"
         } else if (head[1] < 0) {
             alert("Redirecting to About");
             this.setState(startState);
-            window.location.href = "/about"
+            window.location.href = "/#/about"
         }
     }
 

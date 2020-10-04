@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 const handleClose = (event) => {
     event.preventDefault();
-    window.location.href = "/";
+    window.location.href = "/#/";
 };
 
 export default function Contact() {
@@ -38,7 +38,7 @@ export default function Contact() {
                         Connect
                     </Typography>
                     <Typography variant="body1" gutterBottom>
-                        Let's connect on LinkedIn or Github! If you're a recruiter, please check out #OpenToWork to see if I'm a good fit for your team. You can learn more about me on the <a href="/about">About</a> page.
+                        Let's connect on LinkedIn or Github! If you're a recruiter, please check out #OpenToWork to see if I'm a good fit for your team. You can learn more about me on the <a href="/#/about">About</a> page.
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>

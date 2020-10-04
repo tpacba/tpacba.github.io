@@ -1,6 +1,6 @@
 import React from 'react';
 import GameArea from './components/GameArea';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import Wrapper from './components/Wrapper';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';

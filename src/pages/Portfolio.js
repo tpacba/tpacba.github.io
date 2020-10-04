@@ -140,7 +140,7 @@ export default function TitlebarGridList() {
                 <Grid item xs={12}>
                     <Typography variant="body2" gutterBottom>
                         Scroll down to check out some of my recent projects! Link to site and open-source
-                        Github are always provided. <br></br>Visit the <a href="/connect">Connect Page</a> to connect with me through Github, LinkedIn, and other socials.
+                        Github are always provided. <br></br>Visit the <a href="/#/connect">Connect Page</a> to connect with me through Github, LinkedIn, and other socials.
           </Typography>
                 </Grid>
                 <Grid item xs={4}>

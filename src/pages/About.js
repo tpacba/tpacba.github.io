@@ -18,7 +18,7 @@ export default function About() {
 
     const handleClose = (event) => {
         event.preventDefault();
-        window.location.href = "/";
+        window.location.href = "/#/";
     };
 
     return (
@@ -85,7 +85,7 @@ export default function About() {
           their mood by fully integrating the Spotify Web API with ReactJS state
           and lifecycles. You can check out the source code for "Smood",
           "SnakePort", as well as my other projects on my{" "}
-                    <a href="/portfolio">Portfolio</a> page.
+                    <a href="/#/portfolio">Portfolio</a> page.
                     </Typography>
         </Grid>
             </Grid>
