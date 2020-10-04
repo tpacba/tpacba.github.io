@@ -2,6 +2,7 @@ import React from 'react';
 import Snake from './Snake';
 import Food from './Food';
 import StartButton from './StartButton';
+import Walls from './Walls';
 
 function getRandomCoordinates() {
     const min = 0;
@@ -45,6 +46,7 @@ class GameArea extends React.Component {
 
     onKeyDown = (event) => {
         event = event || window.event;
+        event.preventDefault();
         if (this.state.direction === 'left') {
             switch (event.keyCode) {
                 case 38:
@@ -126,8 +128,21 @@ class GameArea extends React.Component {
 
     outOfBorders = () => {
         let head = this.state.snakeDots[this.state.snakeDots.length - 1]
-        if (head[0] >= 100 || head[1] >= 100 || head[0] < 0 || head[1] < 0) {
+        //right,bottom,left,top
+        if (head[1] >= 100) {
             this.gameOver()
+        } else if (head[0] >= 100) {
+            alert("Redirecting to Portfolio");
+            this.setState(startState);
+            window.location.href = "/portfolio"
+        } else if (head[0] < 0) {
+            alert("Redirecting to Contact");
+            this.setState(startState);
+            window.location.href = "/contact"
+        } else if (head[1] < 0) {
+            alert("Redirecting to About");
+            this.setState(startState);
+            window.location.href = "/about"
         }
     }
 
@@ -174,6 +189,7 @@ class GameArea extends React.Component {
         return (
             <div className="game-area">
                 {(!this.state.start && <StartButton startGame={this.startGame}></StartButton>)}
+                {(this.state.start && <Walls></Walls>)}
                 <Snake snakeDots={this.state.snakeDots}></Snake>
                 <Food dot={this.state.food}></Food>
             </div>
