@@ -5,6 +5,7 @@ import Wrapper from './components/Wrapper';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Connect from './pages/Connect';
+import Navbar from './components/Navbar'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/about" component={About} />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/connect" component={Connect} />
+          <center><Navbar></Navbar></center>
         </Wrapper>
       </div>
     </Router>
