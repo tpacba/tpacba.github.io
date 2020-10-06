@@ -47,7 +47,8 @@ const tileData = [
             github: "https://github.com/tpacba/project-smood",
             website: "",
         },
-        tags: ["ReactJS", "Heroku", "APIs", "OAuth", "NodeJS"]
+        tags: ["ReactJS", "Heroku", "APIs", "OAuth", "NodeJS"],
+        type: "TEAM"
     },
     {
         img: snakeport,
@@ -60,7 +61,8 @@ const tileData = [
             github: "https://github.com/tpacba/tpacba.github.io.git",
             website: "https://tpacba.github.io",
         },
-        tags: ["ReactJS", "Material-UI", "Javascript", "React-Router"]
+        tags: ["ReactJS", "Material-UI", "Javascript", "React-Router"],
+        type: "INDIVIDUAL"
     },
     {
         img: tinderforrestaurants,
@@ -74,7 +76,8 @@ const tileData = [
             github: "https://github.com/tpacba/tinderforrestaurants.git",
             website: "https://vast-lowlands-43566.herokuapp.com/",
         },
-        tags: ["MySQL", "Sequilize ORM", "PassportJS", "Figma", "ExpressJS"]
+        tags: ["MySQL", "Sequilize ORM", "PassportJS", "Figma", "ExpressJS"],
+        type: "TEAM"
     },
     {
         img: cowabunga,
@@ -86,7 +89,8 @@ const tileData = [
             github: "https://github.com/FuDoggy/project1",
             website: "https://fudoggy.github.io/project1/",
         },
-        tags: ["APIs", "Bootstrap", "jQuery", "Git", "HTML & CSS"]
+        tags: ["APIs", "Bootstrap", "jQuery", "Git", "HTML & CSS"],
+        type: "TEAM"
     },
     {
         img: fitnesstracker,
@@ -98,7 +102,8 @@ const tileData = [
             github: "https://github.com/tpacba/homework17-workout-tracker",
             website: "https://pacific-anchorage-84827.herokuapp.com/",
         },
-        tags: ["MongoDB", "Mongoose", "Express", "AJAX"]
+        tags: ["MongoDB", "Mongoose", "Express", "AJAX"],
+        type: "INDIVIDUAL"
     },
     {
         img: userdirectory,
@@ -110,7 +115,8 @@ const tileData = [
             github: "https://github.com/tpacba/homework19-userdirectory",
             website: "https://tpacba.github.io/homework19-userdirectory/",
         },
-        tags: ["ReactJS", "Bootstrap", "Regex", "APIs"]
+        tags: ["ReactJS", "Bootstrap", "Regex", "APIs"],
+        type: "INDIVIDUAL"
     },
 ];
 
@@ -163,7 +169,8 @@ export default function TitlebarGridList() {
                                                     github: tile.links.github,
                                                     website: tile.links.website,
                                                 },
-                                                tags: tile.tags
+                                                tags: tile.tags,
+                                                type: tile.type
                                             })}
                                         >
                                             <InfoIcon />
@@ -178,7 +185,7 @@ export default function TitlebarGridList() {
                     <Paper variant="outlined" style={{ padding: "20px", backgroundColor: "whitesmoke" }}>
                         <Grid item xs={12}>
                             <Typography variant="h4" gutterBottom>
-                                {tile.title}
+                                {tile.title}<Chip label={tile.type} variant="outlined" style={{marginLeft: "10px"}}/>
                             </Typography>
                         </Grid>
                         <Grid item xs={12}>
