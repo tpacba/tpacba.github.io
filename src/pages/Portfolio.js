@@ -45,7 +45,7 @@ const tileData = [
             My work came mainly from back-end development, like deploying the OAuth Server to access the API, setting up functions for the music player, and develop components to render varying search results.`,
         links: {
             github: "https://github.com/tpacba/project-smood",
-            website: "",
+            website: "https://projectsmood.herokuapp.com/",
         },
         tags: ["ReactJS", "Heroku", "APIs", "OAuth", "NodeJS"],
         type: "TEAM"
