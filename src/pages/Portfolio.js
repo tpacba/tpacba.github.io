@@ -14,6 +14,7 @@ import smood from "../assets/smood.png";
 import snakeport from "../assets/snakport.png";
 import fitnesstracker from "../assets/fitnesstracker.png";
 import userdirectory from "../assets/directory.png";
+import instagraphql from "../assets/instagraph-ql";
 import Paper from '@material-ui/core/Paper';
 import Chip from '@material-ui/core/Chip';
 
@@ -36,6 +37,21 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const tileData = [
+    {
+        img: instagraphql,
+        title: "InstagraphQL",
+        description:
+            `InstagraphQL is fully-fledged social media app in which users can register and login to create posts and interact with other users by commenting or liking their posts.
+            It uses the GraphQL client, Apollo Server, to manage and manipulate database actions and Auth0 programming patterns to hash passwords and validate token usages. 
+            It also uses the Semantic UI library to help with the React-based front-end design.
+            Current development will allow users to post media items.`,
+        links: {
+            github: "https://github.com/tpacba/InstaGraphQL",
+            website: "https://stupefied-minsky-c51eac.netlify.app/"
+        },
+        tags: ["GraphQL", "Apollo Server", "MongoDB", "Netlify"],
+        type: "INDIVIDUAL"
+    },
     {
         img: smood,
         title: "Smood",
