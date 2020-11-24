@@ -14,7 +14,7 @@ import smood from "../assets/smood.png";
 import snakeport from "../assets/snakport.png";
 import fitnesstracker from "../assets/fitnesstracker.png";
 import userdirectory from "../assets/directory.png";
-import instagraphql from "../assets/instagraph-ql";
+import instagraphql from "../assets/instagraph-ql.png";
 import Paper from '@material-ui/core/Paper';
 import Chip from '@material-ui/core/Chip';
 
