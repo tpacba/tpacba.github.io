@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a607d3d1.chunk.css",
+    "main.js": "/static/js/main.6a37e160.chunk.js",
+    "main.js.map": "/static/js/main.6a37e160.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b0382e83.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b0382e83.js.map",
+    "static/js/2.34ad6d7b.chunk.js": "/static/js/2.34ad6d7b.chunk.js",
+    "static/js/2.34ad6d7b.chunk.js.map": "/static/js/2.34ad6d7b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.da13efd92ca732c79c825c2b077446da.js": "/precache-manifest.da13efd92ca732c79c825c2b077446da.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.a607d3d1.chunk.css.map": "/static/css/main.a607d3d1.chunk.css.map",
+    "static/js/2.34ad6d7b.chunk.js.LICENSE.txt": "/static/js/2.34ad6d7b.chunk.js.LICENSE.txt",
+    "static/media/cowabunga-demo.png": "/static/media/cowabunga-demo.9dacab9c.png",
+    "static/media/directory.png": "/static/media/directory.133f1154.png",
+    "static/media/fitnesstracker.png": "/static/media/fitnesstracker.15c21fb5.png",
+    "static/media/instagraph-ql.png": "/static/media/instagraph-ql.ddaa7033.png",
+    "static/media/profile.jpg": "/static/media/profile.8454e338.jpg",
+    "static/media/smood.png": "/static/media/smood.361f7812.png",
+    "static/media/snakport.png": "/static/media/snakport.e2115b79.png",
+    "static/media/tinderforrestaurants.png": "/static/media/tinderforrestaurants.5a9e8ccf.png",
+    "static/media/index.css": "/static/media/wallpaper.6ee6bf8c.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b0382e83.js",
+    "static/js/2.34ad6d7b.chunk.js",
+    "static/css/main.a607d3d1.chunk.css",
+    "static/js/main.6a37e160.chunk.js"
+  ]
+}
